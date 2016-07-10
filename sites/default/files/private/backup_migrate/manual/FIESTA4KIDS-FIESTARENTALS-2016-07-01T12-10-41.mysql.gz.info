@@ -1,0 +1,8 @@
+filename = "FIESTA4KIDS-FIESTARENTALS-2016-07-01T12-10-41"
+description = ""
+datestamp = "1467375053"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.43"
+sites[0][name] = "FIESTA 4 KIDS - FIESTA RENTALS"
+sites[0][url] = "http://fiestarentals.ca/"
