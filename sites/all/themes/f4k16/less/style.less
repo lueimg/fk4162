@@ -1,5 +1,5 @@
 // Generate style.css
-// cd /Applications/MAMP/htdocs/fiesta4kids.20160301/public_html/sites/all/themes/f4k16/less
+// cd sites/all/themes/f4k16/less && lessc  --clean-css style.less ../css/style.css
 // lessc  --clean-css style.less ../css/style.css
 
 // Bootstrap library.
@@ -123,7 +123,9 @@ body {
 }
 .navbar .logo {
   padding: 0;
-
+  img {
+    width: 100%;
+  }
 }
 #navbar {
   background: @amarillo_header;
@@ -2183,5 +2185,69 @@ body {
         }
       }
     }
+  }
+}
+
+.book-info {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  .phone-text {
+    font-family: Vollkorn !important;
+  }
+  .phone-text {
+    color: #000;
+    text-shadow: none;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .footer #block-views-bloques-home-block-2 .view-bloques-home .item-list ul {
+    column-count: 1;
+  }
+  .footer .region-prefooter-right {
+    padding-left: 0;
+  }
+  .footer #block-block-13 #txt-newsletter {
+    width: 80%;
+  }
+  .footer #block-block-30 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer #block-block-25 {
+    display: inline-block;
+    width: 100%;
+    background: 0 0;
+    border-radius: 0;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+  }
+  .footer #block-block-28 .panel-column {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  .footer #block-block-39 {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .nav-right-bdw {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .search-box #edit-title-wrapper {
+    padding: 0;
+    margin-right: 2px;
+    width: 65%;
+  }
+  .page-node.node-type-productv2 #block-system-main .field-name-reserve-node-full-page {
+    position: inherit;
+    top: -80px;
+    right: 0;
   }
 }

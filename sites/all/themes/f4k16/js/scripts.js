@@ -58,4 +58,11 @@ jQuery(function () {
   valideElementsWithWidth();
 
 
+  // Header search
+  // esconde el select en version mobile
+  jQuery('#edit-taxonomy-catalog-tid-wrapper').addClass('hidden-xs');
+  jQuery('.catalog-sidebar .view-content').addClass('hidden-xs');
+
+
+
 });

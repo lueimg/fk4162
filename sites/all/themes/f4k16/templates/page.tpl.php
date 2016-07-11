@@ -73,8 +73,12 @@
  * @ingroup templates
  */
 ?>
+<?php if (!empty($page['header-top'])): ?>
+  <?php print render($page['header-top']); ?>
+<?php endif; ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
+
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -87,17 +91,17 @@
       <?php endif; ?>
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<!--        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+<!--          <span class="sr-only">--><?php //print t('Toggle navigation'); ?><!--</span>-->
+<!--          <span class="icon-bar"></span>-->
+<!--          <span class="icon-bar"></span>-->
+<!--          <span class="icon-bar"></span>-->
+<!--        </button>-->
       <?php endif; ?>
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
+      <div class="">
         <nav role="navigation">
           <div class="col-sm-7 row nav-right-bdw">
             <?php if (!empty($primary_nav)): ?>
